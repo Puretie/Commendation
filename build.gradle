@@ -12,12 +12,12 @@ configurations {
 
 //////////////////////////////////////////////////////////////////////////////////////////////
 // ========== Properties ==========
-group 'org.example'
+group 'org.puretie'
 version '1.0'
-String main = 'pkg.APlugin'
-String author = 'cyberpwn'
-String description = 'An example Shuriken Plugin'
-String pluginsFolder = "C:\\Users\\cyberpwn\\Documents\\development\\server\\plugins";
+String main = 'org.puretie.commendation.Commendation'
+String author = 'puretie'
+String description = 'Commend your fellow player!'
+String pluginsFolder = "C:\\Users\\dabon\\Documents\\development\\server\\plugins";
 
 // ========== Dependencies ==========
 dependencies {
