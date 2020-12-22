@@ -3,4 +3,4 @@ main: ${main}
 version: ${version}
 author: ${author}
 description: ${description}
-depend: Shuriken
+depend: [Shuriken]
