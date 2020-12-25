@@ -9,6 +9,7 @@ import ninja.bytecode.shuriken.bukkit.plugin.ShurikenPlugin;
 import ninja.bytecode.shuriken.bukkit.util.text.C;
 import ninja.bytecode.shuriken.bukkit.util.text.TXT;
 import org.puretie.commendation.commands.CommandCommendation;
+import org.puretie.commendation.commands.CommandReport;
 
 public class Commendation extends ShurikenPlugin {
     @Instance
@@ -20,6 +21,9 @@ public class Commendation extends ShurikenPlugin {
 
     @Command
     private CommandCommendation cc;
+
+    @Command
+    private CommandReport r;
 
     @Override
     public void start()
