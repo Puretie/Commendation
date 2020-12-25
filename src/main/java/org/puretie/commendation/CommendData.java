@@ -17,11 +17,21 @@ public class CommendData
 
     public void commend(String reason)
     {
-        log.add(new CommendLog(M.ms(), reason));
+        commend(reason, 1);
+    }
+
+    public void commend(String reason, int points)
+    {
+        log.add(new CommendLog(M.ms(), reason, points));
     }
 
     public int getCommendationLevel()
     {
-        return log.size();
+        int z = 0;
+        for(CommendLog i : log)
+        {
+            z += i.getPoints();
+        }
+        return z;
     }
 }

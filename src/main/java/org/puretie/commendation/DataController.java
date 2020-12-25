@@ -40,9 +40,16 @@ public class DataController extends Controller
         {
             return p.getUniqueId();
         }
+        try
+        {
+            MojangProfileController c = new V(ShurikenAPIPlugin.p).get("mojangProfileController");
+            return c.getOnlineUUID(s);
+        }
+       catch (Throwable e)
+       {
 
-        MojangProfileController c = new V(ShurikenAPIPlugin.p).get("mojangProfileController");
-        return c.getOnlineUUID(s);
+       }
+        return null;
     }
 
     private CommendData load(UUID u)
