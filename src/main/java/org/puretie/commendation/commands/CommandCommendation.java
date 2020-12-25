@@ -1,5 +1,6 @@
 package org.puretie.commendation.commands;
 
+import ninja.bytecode.shuriken.bukkit.command.Command;
 import ninja.bytecode.shuriken.bukkit.command.ShurikenCommand;
 import ninja.bytecode.shuriken.bukkit.command.ShurikenSender;
 import ninja.bytecode.shuriken.collections.KList;
@@ -8,11 +9,17 @@ import org.puretie.commendation.Commendation;
 
 import java.util.UUID;
 
+
 public class CommandCommendation extends ShurikenCommand
 {
+
+    @Command
+    private CommandGetLevel gl;
+
     public CommandCommendation()
     {
         super("Commend", "c", "com");
+
     }
 
     @Override
